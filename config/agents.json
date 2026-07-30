@@ -1,0 +1,10 @@
+{
+  "agents": [
+    { "name": "ORCHESTRATOR", "role_card": "agents/orchestrator.md", "handles_task_types": [] },
+    { "name": "SCOUT", "role_card": "agents/scout.md", "handles_task_types": ["prospect"] },
+    { "name": "SCRIBE", "role_card": "agents/scribe.md", "handles_task_types": ["write_script", "write_site_copy"] },
+    { "name": "BUILDER", "role_card": "agents/builder.md", "handles_task_types": ["build_demo_site"] },
+    { "name": "CALLER", "role_card": "agents/caller.md", "handles_task_types": ["call_pitch"] },
+    { "name": "LEDGER", "role_card": "agents/ledger.md", "handles_task_types": ["report"] }
+  ]
+}

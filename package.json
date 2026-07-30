@@ -1,0 +1,26 @@
+{
+  "name": "sideline",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Sideline: agents that find businesses without a website, build them a demo site, and call to pitch it.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "bin": {
+    "sideline": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc -p . --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "nanoid": "^5.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}

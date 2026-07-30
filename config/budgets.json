@@ -1,0 +1,12 @@
+{
+  "daily_api_call_cap": {
+    "ORCHESTRATOR": 50,
+    "SCOUT": 100,
+    "SCRIBE": 50,
+    "BUILDER": 50,
+    "CALLER": 30,
+    "LEDGER": 20
+  },
+  "daily_call_minutes_cap": 30,
+  "notes": "Exceeding a cap halts that agent, not the wallet (README §10 rule 6). Tune once real usage/cost data exists."
+}

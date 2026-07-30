@@ -1,0 +1,17 @@
+{
+  "markets": [
+    {
+      "town": "Springfield",
+      "categories": ["pizzeria", "barbershop", "landscaper"],
+      "daily_call_cap": 15,
+      "calling_window": {
+        "days": ["mon", "tue", "wed", "thu", "fri"],
+        "start_local": "09:00",
+        "end_local": "18:00"
+      },
+      "approved_lanes": [
+        { "category": "pizzeria", "script_version": "v1", "approved_by": "founder", "approved_at": "2026-07-31T09:00:00-07:00" }
+      ]
+    }
+  ]
+}
