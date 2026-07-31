@@ -1,0 +1,20 @@
+{
+  "lead": "amandas-mobile-pet-grooming-campbell",
+  "name": "Amanda's Mobile Pet Grooming",
+  "category": "pet grooming",
+  "phone": "+14084603038",
+  "address": "Campbell, CA 95008 (mobile service, no storefront address published)",
+  "hours": {
+    "mon": "09:00-18:00",
+    "tue": "09:00-18:00",
+    "wed": "10:00-17:00",
+    "thu": "09:00-18:00",
+    "fri": "09:00-18:00",
+    "sat": "09:00-19:00",
+    "sun": "closed"
+  },
+  "photos": [],
+  "no_website_evidence": "No independent business website found via web search. Online presence is Yelp, Nextdoor, and Facebook (@AMPGservices) only. Specializes in cat grooming and small dogs (25 lbs and under).",
+  "source": "web_search",
+  "source_checked_at": "2026-07-30T21:55:00Z"
+}

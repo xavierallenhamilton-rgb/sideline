@@ -1,0 +1,20 @@
+{
+  "lead": "julies-barbershop-campbell",
+  "name": "Julie's Barbershop",
+  "category": "barbershop",
+  "phone": "+14083700603",
+  "address": "2221 S Winchester Blvd, Campbell, CA 95008",
+  "hours": {
+    "mon": "closed",
+    "tue": "10:00-19:00",
+    "wed": "10:00-19:00",
+    "thu": "10:00-19:00",
+    "fri": "10:00-19:00",
+    "sat": "10:00-18:00",
+    "sun": "10:00-16:00"
+  },
+  "photos": [],
+  "no_website_evidence": "No independent business website found via web search. Online presence limited to Yelp, Facebook, and third-party booking/directory platforms (Fresha, Booksy, Yellow Pages, Wheree, Atly, Barberhead, SalonTonight). Over 30 years in business, cash only.",
+  "source": "web_search",
+  "source_checked_at": "2026-07-30T21:55:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "lead": "jr-cleaning-service-campbell",
+  "name": "JR Cleaning Service",
+  "category": "house cleaning",
+  "phone": "+16507732415",
+  "address": "Campbell, CA 95008 (exact street address not published)",
+  "hours": {
+    "mon": "07:30-20:00",
+    "tue": "07:30-20:00",
+    "wed": "07:30-20:00",
+    "thu": "07:30-20:00",
+    "fri": "07:30-20:00",
+    "sat": "07:30-20:00",
+    "sun": "10:00-16:00"
+  },
+  "photos": [],
+  "no_website_evidence": "No independent business website found via web search for this Campbell listing. Note: several similarly-named cleaning businesses exist elsewhere (jrcleaningcompany.com, jrjunkremovalandcleaningservices.com, JR Cleaning Services LLC) - confirmed these are separate businesses with different phone numbers, not this listing. Services include carpet cleaning, deep cleaning, move-in/move-out.",
+  "source": "web_search",
+  "source_checked_at": "2026-07-30T21:55:00Z"
+}

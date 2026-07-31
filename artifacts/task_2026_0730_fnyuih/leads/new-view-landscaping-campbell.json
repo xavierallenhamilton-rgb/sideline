@@ -1,0 +1,20 @@
+{
+  "lead": "new-view-landscaping-campbell",
+  "name": "Juan Hernandez / New View Landscaping",
+  "category": "landscaping",
+  "phone": "+14085683022",
+  "address": "1821 S Bascom Ave, Campbell, CA 95008",
+  "hours": {
+    "mon": "08:00-16:45",
+    "tue": "08:00-16:45",
+    "wed": "08:00-16:45",
+    "thu": "08:00-16:45",
+    "fri": "08:00-16:45",
+    "sat": "08:00-16:45",
+    "sun": "closed"
+  },
+  "photos": [],
+  "no_website_evidence": "No independent business website found via web search. Online presence is Yelp, Facebook, BuildZoom, and directory listings only. Holds a California landscaping license.",
+  "source": "web_search",
+  "source_checked_at": "2026-07-30T21:55:00Z"
+}

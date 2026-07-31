@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "id": "task_2026_0730_fnyuih",
+    "lead": null,
+    "lead_phone": null,
+    "type": "prospect",
+    "title": "No-website business sweep - Campbell, CA 95008",
+    "spec": "Manual/Claude-assisted crawl-phase sweep per README section 11: find real local businesses in Campbell, CA 95008 with no independent website, across mixed categories, sourced from live web search (Yelp/directory/social listings only, no dedicated site found).",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCOUT",
+    "status": "approved",
+    "priority": 3,
+    "claimed_by": "SCOUT",
+    "claimed_at": "2026-07-30T21:56:19.296Z",
+    "deadline": null,
+    "artifacts": [
+      "artifacts/task_2026_0730_fnyuih/leads/julies-barbershop-campbell.json",
+      "artifacts/task_2026_0730_fnyuih/leads/new-view-landscaping-campbell.json",
+      "artifacts/task_2026_0730_fnyuih/leads/amandas-mobile-pet-grooming-campbell.json",
+      "artifacts/task_2026_0730_fnyuih/leads/rochas-house-cleaning-campbell.json",
+      "artifacts/task_2026_0730_fnyuih/leads/jr-cleaning-service-campbell.json",
+      "artifacts/task_2026_0730_fnyuih/leads/blue-pool-services-campbell.json"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-07-30T21:55:17.225Z",
+        "event": "created",
+        "by": "FOUNDER"
+      },
+      {
+        "at": "2026-07-30T21:56:19.297Z",
+        "event": "claimed",
+        "by": "SCOUT"
+      },
+      {
+        "at": "2026-07-30T21:57:20.673Z",
+        "event": "artifact_added",
+        "by": "SCOUT",
+        "note": "artifacts/task_2026_0730_fnyuih/leads/julies-barbershop-campbell.json"
+      },
+      {
+        "at": "2026-07-30T21:57:22.698Z",
+        "event": "artifact_added",
+        "by": "SCOUT",
+        "note": "artifacts/task_2026_0730_fnyuih/leads/new-view-landscaping-campbell.json"
+      },
+      {
+        "at": "2026-07-30T21:57:24.726Z",
+        "event": "artifact_added",
+        "by": "SCOUT",
+        "note": "artifacts/task_2026_0730_fnyuih/leads/amandas-mobile-pet-grooming-campbell.json"
+      },
+      {
+        "at": "2026-07-30T21:57:26.804Z",
+        "event": "artifact_added",
+        "by": "SCOUT",
+        "note": "artifacts/task_2026_0730_fnyuih/leads/rochas-house-cleaning-campbell.json"
+      },
+      {
+        "at": "2026-07-30T21:57:28.834Z",
+        "event": "artifact_added",
+        "by": "SCOUT",
+        "note": "artifacts/task_2026_0730_fnyuih/leads/jr-cleaning-service-campbell.json"
+      },
+      {
+        "at": "2026-07-30T21:57:30.872Z",
+        "event": "artifact_added",
+        "by": "SCOUT",
+        "note": "artifacts/task_2026_0730_fnyuih/leads/blue-pool-services-campbell.json"
+      },
+      {
+        "at": "2026-07-30T21:57:32.938Z",
+        "event": "status:review_ready",
+        "by": "SCOUT",
+        "note": "6 leads found and sourced; ready for founder review before any calling"
+      },
+      {
+        "at": "2026-07-31T18:59:16.980Z",
+        "event": "approved",
+        "by": "Xavier",
+        "note": "Approved 6-lead Campbell sweep to proceed to demo-site build phase"
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "approved",
+      "notes": "Approved 6-lead Campbell sweep to proceed to demo-site build phase"
+    }
+  }
+]

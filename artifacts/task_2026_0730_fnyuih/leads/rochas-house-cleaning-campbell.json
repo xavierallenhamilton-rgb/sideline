@@ -1,0 +1,20 @@
+{
+  "lead": "rochas-house-cleaning-campbell",
+  "name": "Rocha's House Cleaning",
+  "category": "house cleaning",
+  "phone": "+14088380689",
+  "address": "123 Dot Ave, Campbell, CA 95008",
+  "hours": {
+    "mon": "hours vary, verify by phone",
+    "tue": "hours vary, verify by phone",
+    "wed": "hours vary, verify by phone",
+    "thu": "hours vary, verify by phone",
+    "fri": "hours vary, verify by phone",
+    "sat": "hours vary, verify by phone",
+    "sun": "closed"
+  },
+  "photos": [],
+  "no_website_evidence": "No independent business website found via web search. Listed on Yelp only among Campbell-specific results. Note: several similarly-named cleaning businesses exist in other cities (Rocha's Cleaning - Roseville, A'Rocha Cleaning, Rocha Silva Cleaning) - confirmed these are separate businesses, not this listing. Established 2003, services general house/apartment/office/window/jacuzzi cleaning.",
+  "source": "web_search",
+  "source_checked_at": "2026-07-30T21:55:00Z"
+}

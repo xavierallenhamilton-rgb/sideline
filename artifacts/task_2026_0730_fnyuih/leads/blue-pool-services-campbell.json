@@ -1,0 +1,20 @@
+{
+  "lead": "blue-pool-services-campbell",
+  "name": "Blue Pool Services",
+  "category": "pool cleaning/maintenance",
+  "phone": "+14084832051",
+  "address": "Campbell, CA 95008 (exact street address not published)",
+  "hours": {
+    "mon": "hours vary, verify by phone",
+    "tue": "hours vary, verify by phone",
+    "wed": "hours vary, verify by phone",
+    "thu": "hours vary, verify by phone",
+    "fri": "hours vary, verify by phone",
+    "sat": "hours vary, verify by phone",
+    "sun": "hours vary, verify by phone"
+  },
+  "photos": [],
+  "no_website_evidence": "No independent business website found via web search. Online presence is Yelp and Yahoo Local only. Weekly service starting at $150/month, offers pool and spa maintenance.",
+  "source": "web_search",
+  "source_checked_at": "2026-07-30T21:55:00Z"
+}

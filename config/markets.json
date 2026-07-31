@@ -1,3 +1,17 @@
 {
-  "markets": []
+  "markets": [
+    {
+      "town": "Campbell",
+      "zip": "95008",
+      "categories": ["mixed - crawl phase manual sweep"],
+      "daily_call_cap": 0,
+      "calling_window": {
+        "days": ["mon", "tue", "wed", "thu", "fri"],
+        "start_local": "09:00",
+        "end_local": "18:00"
+      },
+      "approved_lanes": [],
+      "notes": "Crawl phase (README §11): no calling lane approved yet. Leads below are for manual founder-made calls only."
+    }
+  ]
 }
