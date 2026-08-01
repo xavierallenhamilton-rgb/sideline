@@ -295,6 +295,7 @@ footer.note{
   display:flex; align-items:center; justify-content:center;
   padding:20px; z-index:100;
 }
+.modal-backdrop[hidden]{ display:none; }
 .modal{
   background:var(--surface); border-radius:14px; padding:24px 26px;
   max-width:480px; width:100%; box-shadow:var(--shadow);
