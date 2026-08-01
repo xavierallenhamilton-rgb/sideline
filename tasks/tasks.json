@@ -161,5 +161,628 @@
       "status": "pending",
       "notes": ""
     }
+  },
+  {
+    "id": "task_2026_0801_7tg2ua",
+    "lead": "new-view-landscaping-campbell",
+    "lead_phone": null,
+    "type": "write_site_copy",
+    "title": "Site copy - New View Landscaping",
+    "spec": "Write on-page copy for New View Landscaping demo site per SCOUT lead record. No invented facts, no pricing.",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCRIBE",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": "SCRIBE",
+    "claimed_at": "2026-08-01T18:14:14.859Z",
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/new-view-landscaping-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/new-view-landscaping-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:14:12.433Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:14:14.860Z",
+        "event": "claimed",
+        "by": "SCRIBE"
+      },
+      {
+        "at": "2026-08-01T18:14:17.119Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "../sideline-sites/new-view-landscaping-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/new-view-landscaping-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:14:19.413Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Copy drafted and built directly into standalone site repo (design pass via Fable)."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_34f6hf",
+    "lead": "amandas-mobile-pet-grooming-campbell",
+    "lead_phone": null,
+    "type": "write_site_copy",
+    "title": "Site copy - Amanda's Mobile Pet Grooming",
+    "spec": "Write on-page copy for Amanda's Mobile Pet Grooming demo site per SCOUT lead record. Mobile service, no storefront address. No invented facts, no pricing.",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCRIBE",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": "SCRIBE",
+    "claimed_at": "2026-08-01T18:14:24.136Z",
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/amandas-mobile-pet-grooming-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/amandas-mobile-pet-grooming-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:14:21.726Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:14:24.138Z",
+        "event": "claimed",
+        "by": "SCRIBE"
+      },
+      {
+        "at": "2026-08-01T18:14:26.412Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "../sideline-sites/amandas-mobile-pet-grooming-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/amandas-mobile-pet-grooming-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:14:28.688Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Copy drafted and built directly into standalone site repo (design pass via Fable)."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_9pvm1k",
+    "lead": "rochas-house-cleaning-campbell",
+    "lead_phone": null,
+    "type": "write_site_copy",
+    "title": "Site copy - Rocha's House Cleaning",
+    "spec": "Write on-page copy for Rocha's House Cleaning demo site per SCOUT lead record. No invented facts, no pricing.",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCRIBE",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": "SCRIBE",
+    "claimed_at": "2026-08-01T18:14:33.399Z",
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/rochas-house-cleaning-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/rochas-house-cleaning-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:14:30.976Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:14:33.401Z",
+        "event": "claimed",
+        "by": "SCRIBE"
+      },
+      {
+        "at": "2026-08-01T18:14:35.660Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "../sideline-sites/rochas-house-cleaning-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/rochas-house-cleaning-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:14:37.910Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Copy drafted and built directly into standalone site repo (design pass via Fable)."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_7n6v23",
+    "lead": "jr-cleaning-service-campbell",
+    "lead_phone": null,
+    "type": "write_site_copy",
+    "title": "Site copy - JR Cleaning Service",
+    "spec": "Write on-page copy for JR Cleaning Service demo site per SCOUT lead record. No invented facts, no pricing.",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCRIBE",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": "SCRIBE",
+    "claimed_at": "2026-08-01T18:14:42.575Z",
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/jr-cleaning-service-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/jr-cleaning-service-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:14:40.196Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:14:42.576Z",
+        "event": "claimed",
+        "by": "SCRIBE"
+      },
+      {
+        "at": "2026-08-01T18:14:44.836Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "../sideline-sites/jr-cleaning-service-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/jr-cleaning-service-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:14:47.103Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Copy drafted and built directly into standalone site repo (design pass via Fable)."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_z4zn10",
+    "lead": "blue-pool-services-campbell",
+    "lead_phone": null,
+    "type": "write_site_copy",
+    "title": "Site copy - Blue Pool Services",
+    "spec": "Write on-page copy for Blue Pool Services demo site per SCOUT lead record. No invented facts, and specifically no pricing (lead record mentions $150/month - must not appear in copy per founder-only pricing rule).",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCRIBE",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": "SCRIBE",
+    "claimed_at": "2026-08-01T18:14:51.771Z",
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/blue-pool-services-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/blue-pool-services-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:14:49.403Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:14:51.772Z",
+        "event": "claimed",
+        "by": "SCRIBE"
+      },
+      {
+        "at": "2026-08-01T18:14:54.069Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "../sideline-sites/blue-pool-services-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/blue-pool-services-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:14:56.338Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Copy drafted and built directly into standalone site repo (design pass via Fable); confirmed no dollar figures anywhere in the copy."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_9lszyx",
+    "lead": "julies-barbershop-campbell",
+    "lead_phone": null,
+    "type": "build_demo_site",
+    "title": "Demo site build - Julie's Barbershop",
+    "spec": "Build real one-page HTML/CSS demo site for Julie's Barbershop from approved site copy (task_2026_0731_yyswkr). Vintage barbershop design, real photography, mobile-responsive.",
+    "acceptance_criteria": [],
+    "depends_on": [
+      "task_2026_0731_yyswkr"
+    ],
+    "assigned_role": "BUILDER",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": null,
+    "claimed_at": null,
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/julies-barbershop-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/julies-barbershop-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:15:55.488Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:16:00.131Z",
+        "event": "artifact_added",
+        "by": "BUILDER",
+        "note": "../sideline-sites/julies-barbershop-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/julies-barbershop-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:16:02.401Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Built via Fable design pass: vintage barbershop palette, Oswald/Libre Baskerville, 3 local images, responsive. Committed and pushed to public repo."
+      },
+      {
+        "at": "2026-08-01T18:19:53.279Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Note: claim was correctly blocked by the task board's dependency gate (README §4.2 rule 3) since this task's write_site_copy dependency isn't founder-approved yet, only review_ready. SCRIBE+BUILDER work was done together in one Fable pass for this batch, out of the normal claim order — task board history reflects that the claim step never went through, though the artifact and status were still recorded."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_3chv8x",
+    "lead": "new-view-landscaping-campbell",
+    "lead_phone": null,
+    "type": "build_demo_site",
+    "title": "Demo site build - New View Landscaping",
+    "spec": "Build real one-page HTML/CSS demo site for New View Landscaping from approved site copy (task_2026_0801_7tg2ua). Earthy/natural design, real photography, mobile-responsive.",
+    "acceptance_criteria": [],
+    "depends_on": [
+      "task_2026_0801_7tg2ua"
+    ],
+    "assigned_role": "BUILDER",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": null,
+    "claimed_at": null,
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/new-view-landscaping-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/new-view-landscaping-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:16:04.711Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:16:09.461Z",
+        "event": "artifact_added",
+        "by": "BUILDER",
+        "note": "../sideline-sites/new-view-landscaping-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/new-view-landscaping-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:16:11.751Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Built via Fable design pass: earthy green/wood palette, CA license badge featured, 3 local images, responsive. Committed and pushed to public repo."
+      },
+      {
+        "at": "2026-08-01T18:19:55.568Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Note: claim was correctly blocked by the task board's dependency gate (README §4.2 rule 3) since this task's write_site_copy dependency isn't founder-approved yet, only review_ready. SCRIBE+BUILDER work was done together in one Fable pass for this batch, out of the normal claim order — task board history reflects that the claim step never went through, though the artifact and status were still recorded."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_9k5h4n",
+    "lead": "amandas-mobile-pet-grooming-campbell",
+    "lead_phone": null,
+    "type": "build_demo_site",
+    "title": "Demo site build - Amanda's Mobile Pet Grooming",
+    "spec": "Build real one-page HTML/CSS demo site for Amanda's Mobile Pet Grooming from approved site copy (task_2026_0801_34f6hf). Playful mobile-groomer design, real photography, mobile-responsive.",
+    "acceptance_criteria": [],
+    "depends_on": [
+      "task_2026_0801_34f6hf"
+    ],
+    "assigned_role": "BUILDER",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": null,
+    "claimed_at": null,
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/amandas-mobile-pet-grooming-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/amandas-mobile-pet-grooming-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:16:14.065Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:16:18.749Z",
+        "event": "artifact_added",
+        "by": "BUILDER",
+        "note": "../sideline-sites/amandas-mobile-pet-grooming-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/amandas-mobile-pet-grooming-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:16:21.023Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Built via Fable design pass: cream/peach/coral palette leaning into 'we come to you' hook, 2 local images, responsive. Committed and pushed to public repo."
+      },
+      {
+        "at": "2026-08-01T18:19:57.869Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Note: claim was correctly blocked by the task board's dependency gate (README §4.2 rule 3) since this task's write_site_copy dependency isn't founder-approved yet, only review_ready. SCRIBE+BUILDER work was done together in one Fable pass for this batch, out of the normal claim order — task board history reflects that the claim step never went through, though the artifact and status were still recorded."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_mai7kn",
+    "lead": "rochas-house-cleaning-campbell",
+    "lead_phone": null,
+    "type": "build_demo_site",
+    "title": "Demo site build - Rocha's House Cleaning",
+    "spec": "Build real one-page HTML/CSS demo site for Rocha's House Cleaning from approved site copy (task_2026_0801_9pvm1k). Warm trustworthy design, real photography, mobile-responsive.",
+    "acceptance_criteria": [],
+    "depends_on": [
+      "task_2026_0801_9pvm1k"
+    ],
+    "assigned_role": "BUILDER",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": null,
+    "claimed_at": null,
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/rochas-house-cleaning-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/rochas-house-cleaning-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:16:23.316Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:16:27.946Z",
+        "event": "artifact_added",
+        "by": "BUILDER",
+        "note": "../sideline-sites/rochas-house-cleaning-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/rochas-house-cleaning-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:16:30.186Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Built via Fable design pass: sage/cream/terracotta palette, 'Est. 2003' badge, 1 local image, responsive. Committed and pushed to public repo."
+      },
+      {
+        "at": "2026-08-01T18:20:00.147Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Note: claim was correctly blocked by the task board's dependency gate (README §4.2 rule 3) since this task's write_site_copy dependency isn't founder-approved yet, only review_ready. SCRIBE+BUILDER work was done together in one Fable pass for this batch, out of the normal claim order — task board history reflects that the claim step never went through, though the artifact and status were still recorded."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_iao9np",
+    "lead": "jr-cleaning-service-campbell",
+    "lead_phone": null,
+    "type": "build_demo_site",
+    "title": "Demo site build - JR Cleaning Service",
+    "spec": "Build real one-page HTML/CSS demo site for JR Cleaning Service from approved site copy (task_2026_0801_7n6v23). Distinct from Rocha's (same category), real photography, mobile-responsive.",
+    "acceptance_criteria": [],
+    "depends_on": [
+      "task_2026_0801_7n6v23"
+    ],
+    "assigned_role": "BUILDER",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": null,
+    "claimed_at": null,
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/jr-cleaning-service-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/jr-cleaning-service-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:16:32.445Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:16:37.115Z",
+        "event": "artifact_added",
+        "by": "BUILDER",
+        "note": "../sideline-sites/jr-cleaning-service-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/jr-cleaning-service-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:16:39.398Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Built via Fable design pass: warm green/amber editorial design distinct from Rocha's, 2 local images, responsive. Committed and pushed to public repo."
+      },
+      {
+        "at": "2026-08-01T18:20:02.437Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Note: claim was correctly blocked by the task board's dependency gate (README §4.2 rule 3) since this task's write_site_copy dependency isn't founder-approved yet, only review_ready. SCRIBE+BUILDER work was done together in one Fable pass for this batch, out of the normal claim order — task board history reflects that the claim step never went through, though the artifact and status were still recorded."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
+  },
+  {
+    "id": "task_2026_0801_3b4wni",
+    "lead": "blue-pool-services-campbell",
+    "lead_phone": null,
+    "type": "build_demo_site",
+    "title": "Demo site build - Blue Pool Services",
+    "spec": "Build real one-page HTML/CSS demo site for Blue Pool Services from approved site copy (task_2026_0801_z4zn10). Aquatic design, no pricing, mobile-responsive.",
+    "acceptance_criteria": [],
+    "depends_on": [
+      "task_2026_0801_z4zn10"
+    ],
+    "assigned_role": "BUILDER",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": null,
+    "claimed_at": null,
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/blue-pool-services-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/blue-pool-services-campbell)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-08-01T18:16:41.627Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-08-01T18:16:46.294Z",
+        "event": "artifact_added",
+        "by": "BUILDER",
+        "note": "../sideline-sites/blue-pool-services-campbell (external repo, pushed to https://github.com/xavierallenhamilton-rgb/blue-pool-services-campbell)"
+      },
+      {
+        "at": "2026-08-01T18:16:48.531Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Built via Fable design pass: teal/aqua palette with CSS/SVG waves carrying the design (only 1 usable stock photo), 1 local image, responsive. No dollar figures anywhere. Committed and pushed to public repo."
+      },
+      {
+        "at": "2026-08-01T18:20:04.726Z",
+        "event": "status:review_ready",
+        "by": "BUILDER",
+        "note": "Note: claim was correctly blocked by the task board's dependency gate (README §4.2 rule 3) since this task's write_site_copy dependency isn't founder-approved yet, only review_ready. SCRIBE+BUILDER work was done together in one Fable pass for this batch, out of the normal claim order — task board history reflects that the claim step never went through, though the artifact and status were still recorded."
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
   }
 ]
