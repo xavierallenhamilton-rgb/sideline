@@ -94,5 +94,72 @@
       "status": "approved",
       "notes": "Approved 6-lead Campbell sweep to proceed to demo-site build phase"
     }
+  },
+  {
+    "id": "task_2026_0731_yyswkr",
+    "lead": "julies-barbershop-campbell",
+    "lead_phone": null,
+    "type": "write_site_copy",
+    "title": "Site copy - Julie's Barbershop",
+    "spec": "Write on-page copy for Julie's Barbershop demo site per SCOUT lead record (artifacts/task_2026_0730_fnyuih/leads/julies-barbershop-campbell.json): name, hours, address, cash-only note, 30+ yrs in business. No invented facts.",
+    "acceptance_criteria": [],
+    "depends_on": [],
+    "assigned_role": "SCRIBE",
+    "status": "review_ready",
+    "priority": 3,
+    "claimed_by": "SCRIBE",
+    "claimed_at": "2026-07-31T19:03:55.443Z",
+    "deadline": null,
+    "artifacts": [
+      "../sideline-sites/julies-barbershop-campbell (external repo)"
+    ],
+    "call_outcome": {
+      "disposition": null,
+      "transcript_url": null,
+      "recording_url": null,
+      "duration_seconds": null,
+      "recorded_with_consent": null
+    },
+    "history": [
+      {
+        "at": "2026-07-31T19:03:46.929Z",
+        "event": "created",
+        "by": "Xavier"
+      },
+      {
+        "at": "2026-07-31T19:03:55.444Z",
+        "event": "claimed",
+        "by": "SCRIBE"
+      },
+      {
+        "at": "2026-08-01T17:23:38.339Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "artifacts/task_2026_0731_yyswkr/site_copy.md"
+      },
+      {
+        "at": "2026-08-01T17:23:40.655Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Site copy drafted from SCOUT lead record, no invented facts, ready for founder review"
+      },
+      {
+        "at": "2026-08-01T17:35:17.212Z",
+        "event": "artifact_added",
+        "by": "SCRIBE",
+        "note": "../sideline-sites/julies-barbershop-campbell (external repo)"
+      },
+      {
+        "at": "2026-08-01T17:35:36.417Z",
+        "event": "status:review_ready",
+        "by": "SCRIBE",
+        "note": "Moved site copy into its own MIT-licensed repo at ../sideline-sites/julies-barbershop-campbell per licensing split; removed duplicate from this repo's artifacts/"
+      }
+    ],
+    "human_approval": {
+      "required": true,
+      "status": "pending",
+      "notes": ""
+    }
   }
 ]
