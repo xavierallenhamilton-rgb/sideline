@@ -1,3 +1,7 @@
+**© 2026 Xavier Hamilton. All rights reserved.** This repository is public for visibility only — no license is granted to use, copy, modify, or distribute this code. See [`LICENSE`](./LICENSE). (Demo-site output generated for prospects is licensed separately, permissively, per-site — see §12 below.)
+
+---
+
 # SIDELINE — The Student-Athlete Agent Studio
 
 **An operations blueprint for a one-person, AI-powered local business services company.**
