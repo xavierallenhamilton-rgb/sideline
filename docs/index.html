@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sideline — Mission Control</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Karla:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topline">
+    <div>
+      <div class="eyebrow">Sideline · Campbell, CA 95008 · Crawl Phase</div>
+      <h1>Mission Control</h1>
+    </div>
+    <div class="top-actions">
+      <button id="narrate-btn" class="btn btn-ghost" title="Read the current state aloud">🔊 Narrate</button>
+      <button id="listen-btn" class="btn btn-ghost" title="Say a command, e.g. &quot;approve Julie's Barbershop&quot;">🎤 Listen</button>
+      <button id="refresh-btn" class="btn btn-ghost" title="Re-fetch the live task board">↻ Refresh</button>
+      <button id="connect-btn" class="btn btn-primary">Connect</button>
+    </div>
+  </div>
+
+  <p class="lede">Live view of the Sideline task board, fetched straight from <span class="mono">github.com/xavierallenhamilton-rgb/sideline</span>. Reading is open to anyone; approving requires your own GitHub token, entered once and kept only in this browser.</p>
+
+  <div id="status-line" class="status-line"></div>
+
+  <div id="stats" class="stats"></div>
+
+  <div id="origin-section"></div>
+
+  <div class="section-head">
+    <h2>Leads</h2>
+    <span id="leads-count" class="count"></span>
+  </div>
+
+  <div id="leads"></div>
+
+  <footer class="note">
+    Approvals write directly to <span class="mono">tasks/tasks.json</span> on GitHub via the real Contents API — a genuine commit, not a simulated action. Your local clone at <span class="mono">C:\Users\xavie\sideline</span> won't see it until you <span class="mono">git pull</span>. Voice narration and listening use your browser's built-in speech APIs; nothing audio leaves this page except to your own browser's speech engine.
+  </footer>
+
+</div>
+
+<div id="token-modal" class="modal-backdrop" hidden>
+  <div class="modal">
+    <h3>Connect your GitHub token</h3>
+    <p>Create a <strong>fine-grained personal access token</strong> at <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">github.com/settings/tokens?type=beta</a>, restricted to the <span class="mono">sideline</span> repository only, with <strong>Contents: Read and write</strong> permission. Paste it below — it's stored only in this browser's local storage, never sent anywhere except directly to api.github.com.</p>
+    <input id="token-input" type="password" placeholder="github_pat_..." autocomplete="off" spellcheck="false">
+    <div class="modal-actions">
+      <button id="token-cancel" class="btn btn-ghost">Cancel</button>
+      <button id="token-save" class="btn btn-primary">Save token</button>
+    </div>
+    <p class="modal-foot">Already connected? This also shows if you want to <a href="#" id="token-clear">disconnect / clear the saved token</a>.</p>
+  </div>
+</div>
+
+<div id="confirm-modal" class="modal-backdrop" hidden>
+  <div class="modal">
+    <h3 id="confirm-title">Confirm action</h3>
+    <p id="confirm-body"></p>
+    <div class="modal-actions">
+      <button id="confirm-cancel" class="btn btn-ghost">Cancel</button>
+      <button id="confirm-ok" class="btn btn-primary">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="leads.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
