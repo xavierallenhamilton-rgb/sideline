@@ -221,12 +221,13 @@ function fmtTime(iso) {
   });
 }
 
-function buildRail(tasksForLead) {
+function buildRail(tasksForLead, sweepApproved) {
   const rail = document.createElement("div");
   rail.className = "rail";
   PIPELINE_STAGES.forEach((stage, i) => {
     const stageTasks = tasksForLead.filter((t) => TYPE_TO_STAGE[t.type] === stage);
     let cls = "idle";
+    if (stage === "SCOUT" && sweepApproved && stageTasks.length === 0) cls = "done";
     if (stageTasks.length > 0) {
       const order = { blocked: 3, pending: 2, done: 1, idle: 0 };
       cls = stageTasks
@@ -277,7 +278,7 @@ function escapeHtml(s) {
   return div.innerHTML;
 }
 
-function buildLeadCard(slug, tasksForLead) {
+function buildLeadCard(slug, tasksForLead, sweepApproved) {
   const info = LEAD_INFO[slug] || {
     name: slug,
     meta: "",
@@ -301,7 +302,7 @@ function buildLeadCard(slug, tasksForLead) {
     <span class="pill ${pillCls}">${pillText}</span>
   `;
   card.appendChild(top);
-  card.appendChild(buildRail(tasksForLead));
+  card.appendChild(buildRail(tasksForLead, sweepApproved));
 
   const artifacts = document.createElement("div");
   artifacts.className = "ticket-artifacts";
@@ -389,12 +390,14 @@ function render(tasks) {
     });
   }
 
+  const sweepApproved = originTasks.some((t) => t.type === "prospect" && t.status === "approved");
+
   const leadsEl = document.getElementById("leads");
   leadsEl.innerHTML = "";
   const orderedSlugs = [...new Set([...Object.keys(LEAD_INFO), ...leadSlugs])].filter((s) => leadSlugs.includes(s));
   orderedSlugs.forEach((slug) => {
     const tasksForLead = tasks.filter((t) => t.lead === slug);
-    leadsEl.appendChild(buildLeadCard(slug, tasksForLead));
+    leadsEl.appendChild(buildLeadCard(slug, tasksForLead, sweepApproved));
   });
   document.getElementById("leads-count").textContent =
     `${orderedSlugs.length} pipeline${orderedSlugs.length === 1 ? "" : "s"} · ${reviewReady} task${reviewReady === 1 ? "" : "s"} review_ready`;
