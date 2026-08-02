@@ -22,10 +22,9 @@
       <div class="form-line">Job order pad · Crawl phase · No. <span class="mono" id="serial-num">SL-000</span></div>
     </div>
     <div class="callbox">
-      <button id="narrate-btn" class="btn btn-call" title="Read the current state aloud"><span class="btn-key">1</span>Narrate</button>
-      <button id="listen-btn" class="btn btn-call" title="Say a command, e.g. &quot;approve Julie's Barbershop&quot;"><span class="btn-key">2</span>Listen</button>
-      <button id="refresh-btn" class="btn btn-call" title="Re-fetch the live task board"><span class="btn-key">3</span>Refresh</button>
-      <button id="connect-btn" class="btn btn-call btn-call-primary"><span class="btn-key">4</span>Connect</button>
+      <button id="assistant-btn" class="btn btn-call" title="Talk to the Sideline assistant"><span class="btn-key">1</span>Assistant</button>
+      <button id="refresh-btn" class="btn btn-call" title="Re-fetch the live task board"><span class="btn-key">2</span>Refresh</button>
+      <button id="connect-btn" class="btn btn-call btn-call-primary"><span class="btn-key">3</span>Connect</button>
     </div>
   </div>
 
@@ -45,7 +44,7 @@
   <div id="leads"></div>
 
   <footer class="note">
-    Approvals write directly to <span class="mono">tasks/tasks.json</span> on GitHub via the real Contents API — a genuine commit, not a simulated action. Your local clone at <span class="mono">C:\Users\xavie\sideline</span> won't see it until you <span class="mono">git pull</span>. Voice narration and listening use your browser's built-in speech APIs; nothing audio leaves this page except to your own browser's speech engine.
+    Approvals write directly to <span class="mono">tasks/tasks.json</span> on GitHub via the real Contents API — a genuine commit, not a simulated action. Your local clone at <span class="mono">C:\Users\xavie\sideline</span> won't see it until you <span class="mono">git pull</span>. The assistant runs an open-source model via your own OpenRouter key; it can only <em>propose</em> an approval — nothing is written until you confirm. Voice uses your browser's built-in speech recognition and synthesis.
   </footer>
 
 </div>
@@ -72,6 +71,36 @@
       <button id="confirm-cancel" class="btn btn-ghost">Cancel</button>
       <button id="confirm-ok" class="btn btn-primary">Confirm</button>
     </div>
+  </div>
+</div>
+
+<div id="ai-modal" class="modal-backdrop" hidden>
+  <div class="modal">
+    <h3>Connect the assistant</h3>
+    <p>This uses an open-source model (not Claude) through <a href="https://openrouter.ai/keys" target="_blank" rel="noopener">OpenRouter</a>, which has a free tier and — unlike most model APIs — supports calling it directly from a browser page. Create a key there, paste it below. Stored only in this browser, sent only to openrouter.ai.</p>
+    <input id="ai-key-input" type="password" placeholder="sk-or-v1-..." autocomplete="off" spellcheck="false">
+    <p class="modal-foot" style="margin-top:-6px;margin-bottom:14px;">Model (a free-tier OpenRouter model ID — check <a href="https://openrouter.ai/models?max_price=0" target="_blank" rel="noopener">current free models</a>, availability changes):</p>
+    <input id="ai-model-input" type="text" placeholder="meta-llama/llama-3.1-8b-instruct:free" autocomplete="off" spellcheck="false">
+    <div class="modal-actions">
+      <button id="ai-cancel" class="btn btn-ghost">Cancel</button>
+      <button id="ai-save" class="btn btn-primary">Save</button>
+    </div>
+    <p class="modal-foot">Already connected? <a href="#" id="ai-clear">Disconnect / clear the saved key</a>.</p>
+  </div>
+</div>
+
+<div id="assistant-panel" class="assistant-panel" hidden>
+  <div class="assistant-head">
+    <span>🤖 Sideline Assistant</span>
+    <button id="assistant-close" class="assistant-close" aria-label="Close assistant">✕</button>
+  </div>
+  <div id="assistant-log" class="assistant-log">
+    <div class="assistant-msg assistant-msg-bot">Hi — ask me what's pending, or say "approve Julie's Barbershop." I'll always confirm before changing anything.</div>
+  </div>
+  <div class="assistant-input-row">
+    <button id="assistant-mic" class="btn btn-ghost" title="Push to talk">🎤</button>
+    <input id="assistant-text" type="text" placeholder="Type or use the mic…" autocomplete="off">
+    <button id="assistant-send" class="btn btn-primary">Send</button>
   </div>
 </div>
 

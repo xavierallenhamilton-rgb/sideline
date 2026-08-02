@@ -373,3 +373,48 @@ footer.note{
   .toast{ background:var(--card-2); color:var(--ink); border-color:var(--accent); }
 }
 .toast.error{ background:var(--stamp-red); color:#1b0805; border-color:var(--stamp-red); }
+
+/* ---------- assistant panel ---------- */
+.assistant-panel{
+  position:fixed; bottom:20px; right:20px;
+  width:min(380px, calc(100vw - 32px));
+  max-height:min(560px, calc(100vh - 100px));
+  background:var(--card); border:1.5px solid var(--ink);
+  border-radius:10px; box-shadow:var(--shadow);
+  display:flex; flex-direction:column; overflow:hidden;
+  z-index:90;
+}
+.assistant-panel[hidden]{ display:none; }
+.assistant-head{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 14px; background:var(--ink); color:var(--paper);
+  font-family:"Big Shoulders Display",system-ui,sans-serif;
+  font-weight:700; text-transform:uppercase; letter-spacing:0.03em; font-size:0.9rem;
+}
+.assistant-close{
+  background:none; border:none; color:inherit; cursor:pointer; font-size:1rem;
+  padding:2px 6px; line-height:1;
+}
+.assistant-close:hover{ opacity:0.7; }
+.assistant-log{
+  flex:1 1 auto; overflow-y:auto; padding:14px; display:flex; flex-direction:column; gap:10px;
+  min-height:120px;
+}
+.assistant-msg{
+  font-size:0.88rem; line-height:1.4; padding:8px 12px; border-radius:8px; max-width:88%;
+}
+.assistant-msg-bot{ background:var(--card-2); color:var(--ink); align-self:flex-start; }
+.assistant-msg-user{ background:var(--accent); color:var(--paper); align-self:flex-end; }
+:root[data-theme="dark"] .assistant-msg-user, @media (prefers-color-scheme:dark){
+  .assistant-msg-user{ color:#04140b; }
+}
+.assistant-msg-system{ font-size:0.78rem; color:var(--ink-faint); font-family:"JetBrains Mono",monospace; align-self:center; }
+.assistant-input-row{
+  display:flex; gap:8px; padding:12px; border-top:1px solid var(--line);
+}
+.assistant-input-row input{
+  flex:1 1 auto; padding:8px 10px; border-radius:6px; border:1px solid var(--line);
+  background:var(--paper); color:var(--ink); font-family:"Karla",sans-serif; font-size:0.88rem;
+}
+.assistant-input-row input:focus-visible{ outline:2px solid var(--accent); }
+.assistant-mic-active{ background:var(--stamp-red-bg) !important; border-color:var(--stamp-red) !important; color:var(--stamp-red) !important; }
