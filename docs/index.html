@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sideline — Mission Control</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+<title>Sideline</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Big+Shoulders+Display:wght@600;700;800&family=Karla:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -18,33 +18,33 @@
   <div class="masthead">
     <div class="masthead-main">
       <div class="eyebrow">Sideline Dispatch · Campbell, CA 95008</div>
-      <h1>Mission Control</h1>
-      <div class="form-line">Job order pad · Crawl phase · No. <span class="mono" id="serial-num">SL-000</span></div>
+      <h1>Sideline</h1>
+      <div class="form-line">Voice &amp; chat assistant · <a href="dashboard/">Dashboard →</a></div>
     </div>
     <div class="callbox">
-      <button id="assistant-btn" class="btn btn-call" title="Talk to the Sideline assistant"><span class="btn-key">1</span>Assistant</button>
-      <button id="refresh-btn" class="btn btn-call" title="Re-fetch the live task board"><span class="btn-key">2</span>Refresh</button>
-      <button id="connect-btn" class="btn btn-call btn-call-primary"><span class="btn-key">3</span>Connect</button>
+      <button id="connect-btn" class="btn btn-call"><span class="btn-key">1</span>Connect GitHub</button>
+      <button id="ai-connect-btn" class="btn btn-call btn-call-primary"><span class="btn-key">2</span>Connect assistant</button>
     </div>
   </div>
 
-  <p class="lede">Live view of the Sideline task board, fetched straight from <span class="mono">github.com/xavierallenhamilton-rgb/sideline</span>. Reading is open to anyone; approving requires your own GitHub token, entered once and kept only in this browser.</p>
+  <p class="lede">Talk or type to ask what's pending, or say "approve Julie's Barbershop." Answers use only the live task board as context — the assistant runs an open-source model via your own OpenRouter key, and can only <em>propose</em> approvals; nothing is written until you confirm.</p>
 
-  <div id="status-line" class="status-line"></div>
-
-  <div id="stats" class="stats"></div>
-
-  <div id="origin-section"></div>
-
-  <div class="section-head">
-    <h2>Leads</h2>
-    <span id="leads-count" class="count"></span>
+  <div id="assistant-panel" class="assistant-panel">
+    <div class="assistant-head">
+      <span>🤖 Sideline</span>
+    </div>
+    <div id="assistant-log" class="assistant-log">
+      <div class="assistant-msg assistant-msg-bot">Hi — ask me what's pending, or say "approve Julie's Barbershop." I'll always confirm before changing anything.</div>
+    </div>
+    <div class="assistant-input-row">
+      <button id="assistant-mic" class="btn btn-ghost" title="Push to talk">🎤</button>
+      <input id="assistant-text" type="text" placeholder="Type or use the mic…" autocomplete="off">
+      <button id="assistant-send" class="btn btn-primary">Send</button>
+    </div>
   </div>
 
-  <div id="leads"></div>
-
   <footer class="note">
-    Approvals write directly to <span class="mono">tasks/tasks.json</span> on GitHub via the real Contents API — a genuine commit, not a simulated action. Your local clone at <span class="mono">C:\Users\xavie\sideline</span> won't see it until you <span class="mono">git pull</span>. The assistant runs an open-source model via your own OpenRouter key; it can only <em>propose</em> an approval — nothing is written until you confirm. Voice uses your browser's built-in speech recognition and synthesis.
+    Approvals write directly to <span class="mono">tasks/tasks.json</span> on GitHub via the real Contents API — a genuine commit, not a simulated action. Your local clone at <span class="mono">C:\Users\xavie\sideline</span> won't see it until you <span class="mono">git pull</span>. The assistant's model runs on OpenRouter (open-source, not Claude), called with your own key; speech uses your browser's built-in recognition and synthesis. See the <a href="dashboard/">Dashboard</a> for the full live task board.
   </footer>
 
 </div>
@@ -63,17 +63,6 @@
   </div>
 </div>
 
-<div id="confirm-modal" class="modal-backdrop" hidden>
-  <div class="modal">
-    <h3 id="confirm-title">Confirm action</h3>
-    <p id="confirm-body"></p>
-    <div class="modal-actions">
-      <button id="confirm-cancel" class="btn btn-ghost">Cancel</button>
-      <button id="confirm-ok" class="btn btn-primary">Confirm</button>
-    </div>
-  </div>
-</div>
-
 <div id="ai-modal" class="modal-backdrop" hidden>
   <div class="modal">
     <h3>Connect the assistant</h3>
@@ -89,24 +78,21 @@
   </div>
 </div>
 
-<div id="assistant-panel" class="assistant-panel" hidden>
-  <div class="assistant-head">
-    <span>🤖 Sideline Assistant</span>
-    <button id="assistant-close" class="assistant-close" aria-label="Close assistant">✕</button>
-  </div>
-  <div id="assistant-log" class="assistant-log">
-    <div class="assistant-msg assistant-msg-bot">Hi — ask me what's pending, or say "approve Julie's Barbershop." I'll always confirm before changing anything.</div>
-  </div>
-  <div class="assistant-input-row">
-    <button id="assistant-mic" class="btn btn-ghost" title="Push to talk">🎤</button>
-    <input id="assistant-text" type="text" placeholder="Type or use the mic…" autocomplete="off">
-    <button id="assistant-send" class="btn btn-primary">Send</button>
+<div id="confirm-modal" class="modal-backdrop" hidden>
+  <div class="modal">
+    <h3 id="confirm-title">Confirm action</h3>
+    <p id="confirm-body"></p>
+    <div class="modal-actions">
+      <button id="confirm-cancel" class="btn btn-ghost">Cancel</button>
+      <button id="confirm-ok" class="btn btn-primary">Confirm</button>
+    </div>
   </div>
 </div>
 
 <div id="toast" class="toast" hidden></div>
 
 <script src="leads.js"></script>
-<script src="app.js"></script>
+<script src="github.js"></script>
+<script src="assistant.js"></script>
 </body>
 </html>

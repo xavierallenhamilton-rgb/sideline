@@ -374,15 +374,15 @@ footer.note{
 }
 .toast.error{ background:var(--stamp-red); color:#1b0805; border-color:var(--stamp-red); }
 
-/* ---------- assistant panel ---------- */
+/* ---------- assistant panel (the Sideline page's main chat surface) ---------- */
 .assistant-panel{
-  position:fixed; bottom:20px; right:20px;
-  width:min(380px, calc(100vw - 32px));
-  max-height:min(560px, calc(100vh - 100px));
+  width:100%;
+  max-width:640px;
+  margin:8px auto 0;
+  height:min(560px, 68vh);
   background:var(--card); border:1.5px solid var(--ink);
   border-radius:10px; box-shadow:var(--shadow);
   display:flex; flex-direction:column; overflow:hidden;
-  z-index:90;
 }
 .assistant-panel[hidden]{ display:none; }
 .assistant-head{
