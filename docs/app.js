@@ -207,7 +207,7 @@ function statusRailClass(status) {
   return "idle";
 }
 
-function statusPillClass(status) {
+function statusStampClass(status) {
   if (status === "approved" || status === "delivered") return "good";
   if (["review_ready", "claimed", "in_progress"].includes(status)) return "warn";
   if (["blocked", "changes_requested", "escalated_to_human", "failed"].includes(status)) return "crit";
@@ -288,9 +288,18 @@ function buildLeadCard(slug, tasksForLead, sweepApproved) {
   const card = document.createElement("div");
   card.className = "ticket";
 
+  const serial = document.createElement("div");
+  serial.className = "ticket-serial";
+  serial.textContent = "No. " + leadSerial(slug);
+  card.appendChild(serial);
+
+  const tear = document.createElement("div");
+  tear.className = "tear";
+  card.appendChild(tear);
+
   const reviewReady = tasksForLead.filter((t) => t.status === "review_ready").length;
-  const pillCls = reviewReady > 0 ? "warn" : "good";
-  const pillText = reviewReady > 0 ? `${reviewReady} review_ready` : "all approved";
+  const stampCls = reviewReady > 0 ? "warn" : "good";
+  const stampText = reviewReady > 0 ? `${reviewReady} pending` : "all clear";
 
   const top = document.createElement("div");
   top.className = "ticket-top";
@@ -299,7 +308,7 @@ function buildLeadCard(slug, tasksForLead, sweepApproved) {
       <div class="ticket-title">${escapeHtml(info.name)}</div>
       <div class="ticket-meta">${escapeHtml(info.meta)}</div>
     </div>
-    <span class="pill ${pillCls}">${pillText}</span>
+    <span class="stamp ${stampCls}">${stampText}</span>
   `;
   card.appendChild(top);
   card.appendChild(buildRail(tasksForLead, sweepApproved));
@@ -309,7 +318,7 @@ function buildLeadCard(slug, tasksForLead, sweepApproved) {
   tasksForLead.forEach((t) => {
     const idSpan = document.createElement("span");
     idSpan.className = "mono";
-    idSpan.style.color = "var(--ink-muted)";
+    idSpan.style.color = "var(--ink-faint)";
     idSpan.textContent = t.id;
     artifacts.appendChild(idSpan);
     const typeSpan = document.createElement("span");
@@ -347,6 +356,14 @@ function buildLeadCard(slug, tasksForLead, sweepApproved) {
   return card;
 }
 
+let lastStatsSignature = null;
+
+function leadSerial(slug) {
+  const idx = Object.keys(LEAD_INFO).indexOf(slug);
+  const n = idx >= 0 ? idx + 1 : Object.keys(LEAD_INFO).length + 1;
+  return "SL-" + String(n).padStart(3, "0");
+}
+
 function render(tasks) {
   currentTasks = tasks;
 
@@ -355,13 +372,21 @@ function render(tasks) {
   const reviewReady = tasks.filter((t) => t.status === "review_ready").length;
   const leadSlugs = [...new Set(tasks.map((t) => t.lead).filter(Boolean))];
 
+  const signature = `${total}|${approved}|${reviewReady}|${leadSlugs.length}`;
+  const changed = lastStatsSignature !== null && lastStatsSignature !== signature;
+  lastStatsSignature = signature;
+
+  const flash = changed ? " flash" : "";
   const statsEl = document.getElementById("stats");
   statsEl.innerHTML = `
-    <div class="stat"><div class="stat-num">${total}</div><div class="stat-label">Total tasks</div></div>
-    <div class="stat is-good"><div class="stat-num">${approved}</div><div class="stat-label">Approved</div></div>
-    <div class="stat is-warn"><div class="stat-num">${reviewReady}</div><div class="stat-label">Review ready</div></div>
-    <div class="stat is-accent"><div class="stat-num">${leadSlugs.length}</div><div class="stat-label">Leads in flight</div></div>
+    <div class="stat"><div class="stat-num${flash}">${total}</div><div class="stat-label">Total tasks</div></div>
+    <div class="stat is-good"><div class="stat-num${flash}">${approved}</div><div class="stat-label">Approved</div></div>
+    <div class="stat is-warn"><div class="stat-num${flash}">${reviewReady}</div><div class="stat-label">Review ready</div></div>
+    <div class="stat is-accent"><div class="stat-num${flash}">${leadSlugs.length}</div><div class="stat-label">Leads in flight</div></div>
   `;
+
+  const serialEl = document.getElementById("serial-num");
+  if (serialEl) serialEl.textContent = "SL-" + String(total).padStart(3, "0");
 
   const originTasks = tasks.filter((t) => !t.lead);
   const originEl = document.getElementById("origin-section");
@@ -371,17 +396,19 @@ function render(tasks) {
     head.className = "section-head";
     head.innerHTML = `<h2>Origin</h2><span class="count">${originTasks.length} task${originTasks.length === 1 ? "" : "s"}</span>`;
     originEl.appendChild(head);
-    originTasks.forEach((t) => {
+    originTasks.forEach((t, i) => {
       const card = document.createElement("div");
       card.className = "ticket";
       card.innerHTML = `
+        <div class="ticket-serial">No. SL-000</div>
+        <div class="tear"></div>
         <div class="ticket-top">
           <div>
             <div class="ticket-id mono">${t.id}</div>
             <div class="ticket-title">${escapeHtml(t.title)}</div>
             <div class="ticket-meta">${escapeHtml(t.assigned_role)} · ${escapeHtml(t.type)}</div>
           </div>
-          <span class="pill ${statusPillClass(t.status)}">${escapeHtml(t.status)}</span>
+          <span class="stamp ${statusStampClass(t.status)}">${escapeHtml(t.status)}</span>
         </div>
         <div class="ticket-body">${escapeHtml(t.spec)}</div>
       `;

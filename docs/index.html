@@ -7,23 +7,25 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Karla:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Big+Shoulders+Display:wght@600;700;800&family=Karla:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="paper">
 <div class="wrap">
 
-  <div class="topline">
-    <div>
-      <div class="eyebrow">Sideline · Campbell, CA 95008 · Crawl Phase</div>
+  <div class="masthead">
+    <div class="masthead-main">
+      <div class="eyebrow">Sideline Dispatch · Campbell, CA 95008</div>
       <h1>Mission Control</h1>
+      <div class="form-line">Job order pad · Crawl phase · No. <span class="mono" id="serial-num">SL-000</span></div>
     </div>
-    <div class="top-actions">
-      <button id="narrate-btn" class="btn btn-ghost" title="Read the current state aloud">🔊 Narrate</button>
-      <button id="listen-btn" class="btn btn-ghost" title="Say a command, e.g. &quot;approve Julie's Barbershop&quot;">🎤 Listen</button>
-      <button id="refresh-btn" class="btn btn-ghost" title="Re-fetch the live task board">↻ Refresh</button>
-      <button id="connect-btn" class="btn btn-primary">Connect</button>
+    <div class="callbox">
+      <button id="narrate-btn" class="btn btn-call" title="Read the current state aloud"><span class="btn-key">1</span>Narrate</button>
+      <button id="listen-btn" class="btn btn-call" title="Say a command, e.g. &quot;approve Julie's Barbershop&quot;"><span class="btn-key">2</span>Listen</button>
+      <button id="refresh-btn" class="btn btn-call" title="Re-fetch the live task board"><span class="btn-key">3</span>Refresh</button>
+      <button id="connect-btn" class="btn btn-call btn-call-primary"><span class="btn-key">4</span>Connect</button>
     </div>
   </div>
 
@@ -46,6 +48,7 @@
     Approvals write directly to <span class="mono">tasks/tasks.json</span> on GitHub via the real Contents API — a genuine commit, not a simulated action. Your local clone at <span class="mono">C:\Users\xavie\sideline</span> won't see it until you <span class="mono">git pull</span>. Voice narration and listening use your browser's built-in speech APIs; nothing audio leaves this page except to your own browser's speech engine.
   </footer>
 
+</div>
 </div>
 
 <div id="token-modal" class="modal-backdrop" hidden>
